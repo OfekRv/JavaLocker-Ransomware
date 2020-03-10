@@ -6,10 +6,10 @@ No reference of using the implemented decrypt function & the encryption key is n
 
 ## Analysis:
 when the JAVABASIC.jar executes it does the following:
-foreach drive letter (C, D, E, F, G, H)
-+  foreach file in drive
-++    if file is not in C:\\Windows and file size < 104857600L // because it encrypts file content as string and it doesnt want to encrypt windows files 
-+++        encrypt file
+
+foreach file in drives (C, D, E, F, G, H)
+*if file is not in C:\\Windows and file size < 104857600L // because it encrypts file content as string and it doesnt want to encrypt windows files 
++        encrypt file
         
 The encryption based on the javax.crypto.Cipher and the key is generated from java.security.SecureRandom
 for each file there is a new generated DES encryption key with SecureRandom created from the seed: dsjfvif$$#%$#jvfdsjf@$@kjvfsfh@$#shrvehdf@$#$
