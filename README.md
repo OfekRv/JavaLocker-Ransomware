@@ -10,12 +10,14 @@ when the JAVABASIC.jar executes it does the following:
 foreach file in drives (C, D, E, F, G, H)
 
 if file is not in C:\\Windows and file size < 104857600L 
+
 (because it encrypts file content as string and it doesnt want to encrypt windows files)
 
 encrypt file
         
 The encryption based on the javax.crypto.Cipher and the key is generated from java.security.SecureRandom
-for each file there is a new generated DES encryption key with SecureRandom created from the seed: dsjfvif$$#%$#jvfdsjf@$@kjvfsfh@$#shrvehdf@$#$
+for each file there is a new generated DES encryption key with SecureRandom created from the seed: "dsjfvif$$#%$#jvfdsjf@$@kjvfsfh@$#shrvehdf@$#$"
+
 the encryption key is not saved and when the function is finished, it can't be restored :(
 
 
