@@ -7,7 +7,7 @@ No reference of using the implemented decrypt function & the encryption key is n
 ## Analysis:
 when the JAVABASIC.jar executes it does the following:
 foreach drive letter (C, D, E, F, G, H)
-  foreach file in drive
++  foreach file in drive
     if file is not in C:\\Windows and file size < 104857600L // because it encrypts file content as string and it doesnt want to encrypt windows files 
         encrypt file
         
