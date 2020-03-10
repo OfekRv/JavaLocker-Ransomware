@@ -31,13 +31,7 @@
        throw new RuntimeException("Error initializing SqlMap class. Cause: " + e);
      } 
    }
- 
- 
- 
- 
- 
- 
-   
+
    public void encrypt(String file, String destFile) throws Exception {
      Cipher cipher = Cipher.getInstance("DES");
      
@@ -55,12 +49,6 @@
      out.close();
    }
  
- 
- 
- 
- 
- 
-   
    public void decrypt(String file, String dest) throws Exception {
      Cipher cipher = Cipher.getInstance("DES");
      cipher.init(2, this.key);
