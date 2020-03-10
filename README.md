@@ -1,8 +1,9 @@
 # JavaLocker-ransomware
 JavaLocker (.javalocker virus) is a new (03.2020) ransomware which encrypts your files with DES algorithm.
+MD5 - 0DB8A7D767A2454998BF3EE875676929
 
 ## THIS IS A FRAUD RANSOMWARE
-No reference of using the implemented decrypt function & the encryption key is never seved!
+No reference of using the implemented decrypt function & the encryption key is never saved!
 
 ## Analysis:
 when the JAVABASIC.jar executes it does the following:
@@ -20,6 +21,9 @@ for each file there is a new generated DES encryption key with SecureRandom crea
 
 the encryption key is not saved and when the function is finished, it can't be restored :(
 
+## Reports:
+https://www.hybrid-analysis.com/sample/f066d13a09f28ea52e5dffe049210f6ab7abcb87222e50a77e7631fed783224e?environmentId=100
+https://www.virustotal.com/gui/file/f066d13a09f28ea52e5dffe049210f6ab7abcb87222e50a77e7631fed783224e/detection
 
 This ransomware was decompiled with JD (http://java-decompiler.github.io/)
 
