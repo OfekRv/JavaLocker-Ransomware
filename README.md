@@ -1,5 +1,6 @@
 # JavaLocker-ransomware
 JavaLocker (.javalocker virus) is a new (03.2020) ransomware which encrypts your files with DES algorithm.
+
 MD5 - 0DB8A7D767A2454998BF3EE875676929
 
 ## THIS IS A FRAUD RANSOMWARE
