@@ -18,6 +18,7 @@ if file size < 104857600L
 encrypt file
         
 The encryption based on the javax.crypto.Cipher and the key is generated from java.security.SecureRandom
+
 for each file there is a new generated DES encryption key with SecureRandom created from the seed: "dsjfvif$$#%$#jvfdsjf@$@kjvfsfh@$#shrvehdf@$#$"
 
 the encryption key is not saved and when the function is finished, it can't be restored :(
