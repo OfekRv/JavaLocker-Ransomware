@@ -11,9 +11,7 @@ when the JAVABASIC.jar executes it does the following:
 
 foreach file in drives (C, D, E, F, G, H)
 
-if file size < 104857600L 
-
-(because it encrypts file content as string in memory)
+if file size < 104857600L (because it encrypts file content as string in memory)
 
 encrypt file
         
